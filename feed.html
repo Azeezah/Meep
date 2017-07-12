@@ -1,0 +1,8 @@
+<a href="/write">New Post</a>
+<br>
+<br>
+{% for post in posts %}
+	<b>{{post.poster}}</b> {{post.text}}
+	<a href= "/view?post_id={{ post.key.id() }}">----</a>
+	<br><br>
+{% endfor %}

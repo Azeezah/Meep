@@ -1,0 +1,9 @@
+<a href="/">Feed</a>
+<br>
+<br>
+
+<b>{{post.poster}}</b> {{ post.text }}
+<form method="POST" action="/delete">
+	<input hidden="true" name="post_id" value="{{post.key.id()}}">
+<input >
+</form>
